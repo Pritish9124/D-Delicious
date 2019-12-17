@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    android:theme="@style/AppTheme2"
+    tools:context="com.androstark.ddelicious.SignUp">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="parallax"
+        android:background="@color/signupcolor"
+        android:id="@+id/toolbar"
+        app:title="Sign Up"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_black">
+
+
+    </android.support.v7.widget.Toolbar>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2000000"
+    android:layout_below="@+id/toolbar"
+    ></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="85dp"
+
+        android:layout_marginRight="5dp"
+        android:id="@+id/linearLayout">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+
+            android:id="@+id/signupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:hint="Enter name"
+            android:textColor="@android:color/white"
+            android:textColorHint="#bebebe"
+            android:textSize="22sp"
+            app:met_baseColor="#fff5f5"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="#fffff6"
+            app:met_singleLineEllipsis="true"
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/signupuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textColorHint="#bebebe"
+            android:textSize="22sp"
+            app:met_baseColor="#fff5f5"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="#fffff6"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/signUpPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="#bebebe"
+            android:textSize="22sp"
+            app:met_baseColor="#fff5f5"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="#fffff6"
+            app:met_singleLineEllipsis="true" />
+
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnusrSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/btnSignActive"
+        android:text="CREATE ACCOUNT"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

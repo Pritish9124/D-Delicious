@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:hint=" Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:ems="10"
+        android:padding="15dp"
+
+
+        android:textSize="14sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d4d4"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+
+        android:layout_height="52dp"
+        android:id="@+id/etPassword"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:paddingLeft="8dp"
+
+
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/sign_btn"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_addcart_button"
+        android:text="Sign In"
+        android:textColor="@color/white" />
+
+</LinearLayout>

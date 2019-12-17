@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="My Account" android:id="@+id/myaccountitem">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart"
+
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_shoppingbag"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/signout"
+            android:title="Sign Out" />
+
+    </item>
+
+    <item android:title="Support" android:id="@+id/support">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_write_letter"
+                android:title="Feedback" />
+
+            <item
+                android:id="@+id/nav_customer_care"
+                android:icon="@drawable/ic_customer"
+                android:title="Customer Care" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardElevation="4dp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|top"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/address_customername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center_vertical|start"
+                android:text="Salim Ahmmad Ansari"
+
+                android:textStyle="bold"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/customer_street_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center_vertical|start"
+                    android:text="Patia,Bhubaneswar"
+                    android:textColor="#919191" />
+
+
+                <TextView
+                    android:id="@+id/address_customer_postalcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center_vertical|start"
+                    android:text="9124737364" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp">
+
+            <ImageButton
+                android:id="@+id/btn_address_remove"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_trash" />
+
+            <ImageButton
+                android:id="@+id/btn_address_place"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="70dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Relative"
+    android:background="#ececec"
+    tools:context=".Delivery">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="parallax"
+        android:background="@color/signupcolor"
+        android:id="@+id/toolbar"
+        app:title="Address"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_black"
+
+       />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="62dp"
+        android:layout_below="@+id/toolbar"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative"
+        android:id="@+id/card_view_delivery"
+
+        android:layout_margin="2dp"
+        app:cardElevation="4dp"
+
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|top"
+                android:layout_weight="8"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Salim Ahmmad Ansari"
+                    android:textColor="#868282"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_medium"
+
+                    />
+
+                <TextView
+                    android:id="@+id/customer_complete_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:gravity="center_vertical|start"
+                    android:text="Salim Ahmmad Ansari, Laziz food Land, Infocity Road,Kanan Vihar,Patia, Bhubaneswar"
+                    android:textStyle="italic"
+
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/btnChangeAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#f4ff5811"
+                        android:text=" Change Address"
+                        android:textColor="#fffbfb"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4.5dp"
+
+        android:layout_below="@id/card_view_delivery"
+        android:background="#ececec"
+        >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listdelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@android:color/transparent"
+                    />
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="16dp"
+
+                        android:orientation="horizontal"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="8"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/priceDetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical|start"
+                                android:text="Price Details"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/Price_with_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+
+                                android:gravity="center_vertical|start"
+                                android:text="Price(1 item)     "
+                                android:textStyle="italic"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/Price_details"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:text="Total Price "
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/total_price_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:text=" ₹0.00"
+                            android:textColor="#3a933f"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_product_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="2dp"
+            app:cardElevation="4dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <RelativeLayout
+                   android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/Total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Total: "
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/delivery_product_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/Total_amount"
+                        android:text="₹0"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_proceed_to_pay"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_weight="4"
+                   android:background="@drawable/salim_bg"
+                    android:text="Place Order"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    android:theme="@style/AppTheme"
+    tools:context="com.androstark.ddelicious.MainActivity">
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="#46999797"
+        android:text="Skip"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textStyle="italic" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="38dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/mylogo" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/slogan"
+            android:textColor="#ffffff"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_alignParentBottom="true" android:weightSum="2" android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+        <Button
+        android:id="@+id/btnSignUp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+            android:textColor="@color/white"
+        android:text="Lets Get Started"
+        android:background="@color/signupcolor"
+        />
+        <Button
+            android:id="@+id/btnSignIn1"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Sign In"
+            android:background="@color/btnSignActive"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:clickable="false"
+    android:contextClickable="false"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_dish"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:id="@+id/order_id"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Order No - 11047672"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Order on the way"
+                    android:textSize="14sp"
+                    android:textColor="@color/signupcolor"
+                    android:fontFamily="@font/roboto_medium"
+
+                    />
+
+                <TextView
+                    android:id="@+id/order_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Patia,Bhubaneswar"
+                    android:textSize="12sp"
+                    android:textColor="#434343"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/order_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="12dp"
+                    android:textStyle="italic"
+                    android:gravity="center_vertical|start"
+                    android:textColor="#434343"
+                    android:text="9124737364"
+
+
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_total_price"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="₹ 99.00"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/signupcolor"
+                android:fontFamily="@font/roboto_regular"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:background="#d2d2d2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_name"
+                android:text=" Chicken Biriyani"
+                android:textColor="#434343"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="10dp"
+               android:fontFamily="@font/roboto_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/order_qty"
+                android:layout_marginStart="25dp"
+                android:text="Qty: 2"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#434343"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/order_price"
+                android:text="₹ 99.00"
+                android:layout_marginStart="30dp"
+                android:textColor="#434343"
+
+                android:fontFamily="@font/roboto_regular"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

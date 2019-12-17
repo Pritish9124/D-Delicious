@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context="com.androstark.ddelicious.SignIn">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="parallax"
+        android:background="@color/signupcolor"
+        android:visibility="gone"
+        android:id="@+id/toolbar"
+        app:title="Sign In"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_black">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#a6000000"
+        android:layout_height="match_parent"/>
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo_img"
+        android:padding="20dp"
+        app:srcCompat="@drawable/ic_fork"
+        android:background="@drawable/my_roundnbg"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp"
+        android:layout_height="120dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/logo_img"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/login_bt"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+
+                android:background="@color/white"
+                android:text="Login"
+                android:textColor="@color/signupcolor" />
+
+            <Button
+                android:id="@+id/register_bt"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:background="@color/signupcolor"
+                android:text="Register"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/my_frame"
+
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

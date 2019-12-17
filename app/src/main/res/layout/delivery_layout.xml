@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/card_product_detailsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            app:cardElevation="4dp"
+
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|top"
+                        android:layout_weight="8"
+                        android:orientation="vertical"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/deliver_product_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical|start"
+                                android:text="Samsung Grand Prime"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/roboto_regular"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/delivery_product_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_vertical|start"
+                                android:text=""
+                                android:textColor="#494949"
+                                android:textStyle="normal"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/delivery_product_sizeAttribute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@+id/delivery_product_size"
+                                android:gravity="center_vertical|start"
+                                android:text=""
+                                android:textColor="#1a1a1a"
+                                android:textStyle="normal"
+
+                                />
+                        </RelativeLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/deliver_product_image"
+                        android:layout_width="0dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="6"
+                        android:scaleType="fitCenter" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="150dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="bottom"
+
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Shop For Rs.499 to Get Free Delivery"
+
+
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/lol1"
+                        >
+
+                        <TextView
+                            android:id="@+id/deliver_product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="₹0.00"
+                            android:textColor="#3a933f"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lol1"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="50dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/deliver_product_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Qty: "
+                            android:textColor="#000000"
+                            android:textStyle="normal"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/delivery_product_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="14"
+                            android:textColor="#000000"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>

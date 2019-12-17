@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androstark.ddelicious.AddressLayout"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="parallax"
+        android:background="@color/signupcolor"
+        android:id="@+id/toolbar"
+        app:title="Address"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_black">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+
+            android:id="@+id/ad_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:hint="Name*"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp"
+            app:met_baseColor="#0b0b0b"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="#3463ff"
+            app:met_singleLineEllipsis="true"
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ad_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:hint="Phone Number*"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp"
+            app:met_baseColor="#0b0b0b"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_primaryColor="#3463ff"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ad_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignStart="@+id/ad_button"
+            android:layout_marginTop="11dp"
+            android:autoLink="all"
+            android:gravity="top|left"
+            android:hint="@string/ad_adress"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="5"
+            android:maxLength="2000"
+            android:maxLines="6"
+            android:minLines="1"
+            android:scrollbars="none"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp"
+            app:met_baseColor="#0b0b0b"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#3463ff"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/linearLayout">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/shhipping_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:hint="  Name*"
+                android:textColor="#050505"
+                android:textColorHint="#8c8c8c"
+                android:textSize="17sp"
+                app:met_floatingLabel="highlight"
+                app:met_textColorHint="#8c8c8c"
+                app:met_baseColor="#0056d3"
+                app:met_primaryColor="#ff1b01"
+                app:met_errorColor="#ddaa00"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+
+                android:id="@+id/shipping_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="12dp"
+                android:hint="  Phone Number*"
+                android:inputType="number"
+                android:textColor="#050505"
+                android:textColorHint="#8c8c8c"
+                android:textSize="17sp"
+                android:ems="10"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="#8c8c8c"
+                app:met_baseColor="#0056d3"
+                app:met_primaryColor="#ff1b01"
+                app:met_errorColor="#ddaa00"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+
+                android:id="@+id/address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:hint="  Flat no.,Building name *"
+                android:textColor="#050505"
+                android:textColorHint="#8c8c8c"
+                android:textSize="17sp"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="#8c8c8c"
+                app:met_baseColor="#0056d3"
+                app:met_primaryColor="#ff1b01"
+                app:met_errorColor="#ddaa00"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+
+                android:id="@+id/address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:hint="  Street address *"
+                android:textColor="#050505"
+                android:textColorHint="#8c8c8c"
+                android:textSize="17sp"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="#8c8c8c"
+                app:met_baseColor="#0056d3"
+                app:met_primaryColor="#ff1b01"
+                app:met_errorColor="#ddaa00"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pincode"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="  Pincode *"
+                    android:ems="5"
+                    android:inputType="number"
+                    android:textColor="#050505"
+                    android:textColorHint="#8c8c8c"
+                    android:textSize="17sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColorHint="#8c8c8c"
+                    app:met_baseColor="#0056d3"
+                    app:met_primaryColor="#ff1b01"
+                    app:met_errorColor="#ddaa00"
+                    />
+                <com.rengwuxian.materialedittext.MaterialEditText
+
+                    android:id="@+id/city"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="  City *"
+                    android:textColor="#050505"
+                    android:textColorHint="#8c8c8c"
+                    android:textSize="17sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColorHint="#8c8c8c"
+                    app:met_baseColor="#0056d3"
+                    app:met_primaryColor="#ff1b01"
+                    app:met_errorColor="#ddaa00"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    "
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ad_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/my_addcart_button"
+        android:text="DELIVER HERE"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/ad_textprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad_button"
+        android:layout_alignStart="@+id/ad_button"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="10dp"
+        android:text="Total:"
+        android:textColor="#ff000000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
