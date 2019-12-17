@@ -94,7 +94,7 @@ public class ContactUs extends AppCompatActivity
 
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:8763452710"));
+                intent.setData(Uri.parse("tel:9124737364"));
 
                 try
                 {
@@ -116,7 +116,7 @@ public class ContactUs extends AppCompatActivity
 
                 final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
                 emailIntent.setType("text/plain");
-                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{  "contact@ibnus.io"});
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{  "pritishsahoo1995@gmail.com"});
                 emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Hello There");
                 emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Add Message here");
                 emailIntent.setPackage("com.google.android.gm");

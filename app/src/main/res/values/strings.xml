@@ -7,7 +7,7 @@
 
     <string name="description">Cash On Delivery Available.!! \n Exclusive on D Delicious \n Description to be updated </string>
     <string name="ad_adress">Flat no.,Locality,Pincode*</string>
-    <string name="ibnus_address">7th Floor, Jss Software Park\nInfocity Road, Bhubaneswar\nPincode- 751024\nOdisha, India</string>
+    <string name="my_address">Bhubaneswar\nOdisha, India</string>
     <string name="my_desc"><![CDATA[Punjabi chicken curry cooked in a traditional pickling spice mix, tasty, tangy & medium spiced, has to be experienced at least once in a lifetime!]]></string>
     <string name="custom_orderplace">We have sent an email with all the details of your order.You can check your order status in My Orders section.Thank you for shopping with us.</string>
 </resources>

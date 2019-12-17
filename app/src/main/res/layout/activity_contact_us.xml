@@ -42,7 +42,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get in touch with ibnus"
+            android:text="Get in touch with Developer"
             android:textSize="24sp"
             android:fontFamily="@font/russo_one_regular"
             android:textColor="#ffffff"
@@ -74,7 +74,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ibnus_address"
+                    android:text="@string/my_address"
                     android:layout_marginTop="2dp"
                     android:textColor="#f4f4f4"
                     android:layout_marginStart="10dp"
@@ -87,7 +87,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_navigation"
+                app:srcCompat="@drawable/ic_navigation"
                 android:layout_gravity="center"
                 android:id="@+id/navigate_btn"
                 android:layout_margin="5dp"
@@ -126,7 +126,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="contact@ibnus.io"
+                    android:text="pritishsahoo1995@gmail.com"
                     android:textColor="#f5f5f5"
                     android:layout_marginStart="10dp"
                     android:textSize="16sp"
@@ -173,7 +173,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8763452710"
+                    android:text="9124737364"
                     android:textColor="#f5f5f5"
                     android:layout_marginStart="10dp"
                     android:textSize="16sp"
